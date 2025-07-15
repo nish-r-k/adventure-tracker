@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Outdoor Adventure Tracker</title>
+<link rel="stylesheet" href="style.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+</head>
+<body>
+<main>
+  <h1>Outdoor Adventure Tracker</h1>
+  <p id="network-status"></p>
+  <p id="location-status">Initializing GPS...</p>
+  <div id="map-canvas">
+    <div id="map"></div>
+    <canvas id="route-canvas"></canvas>
+  </div>
+  <div id="weather-display">
+    <p id="weather-info">Weather: --</p>
+  </div>
+  <button id="share-btn">Share Location</button>
+  <p id="alert-msg"></p>
+</main>
+
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+></script>
+<script src="script.js"></script>
+</body>
+</html>
 
